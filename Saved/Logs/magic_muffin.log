@@ -1,9 +1,9 @@
-﻿Log file open, 04/17/17 21:03:59
+﻿Log file open, 04/17/17 21:23:16
 LogInit:Display: Running engine for game: magic_muffin
 LogPlatformFile: Not using cached read wrapper
-LogInit:Display: RandInit(-665215511) SRandInit(-665215511).
+LogInit:Display: RandInit(-788347174) SRandInit(-788347174).
 LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
-LogStats: Stats thread started at 0.077309
+LogStats: Stats thread started at 0.078060
 LogPluginManager: Loaded Plugin Paper2D, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/2D/Paper2D/Paper2D.uplugin
 LogPluginManager: Loaded Plugin LightPropagationVolume, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Blendables/LightPropagationVolume/LightPropagationVolume.uplugin
 LogPluginManager: Loaded Plugin BlankPlugin, From C:/Program Files/Epic Games/UE_4.14/Engine/Plugins/Developer/BlankPlugin/BlankPlugin.uplugin
@@ -144,17 +144,315 @@ LogInit: Base directory: C:/Program Files/Epic Games/UE_4.14/Engine/Binaries/Win
 LogInit: Installed Engine Build: 1
 LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
 LogInit: Object subsystem initialized
-[2017.04.18-01.03.59:951][  0]LogInit: Selected Device Profile: [Windows]
-[2017.04.18-01.03.59:951][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2017.04.18-01.03.59:960][  0]LogInit: Computer: SIGLAB-VR2
-[2017.04.18-01.03.59:960][  0]LogInit: User: SIG
-[2017.04.18-01.03.59:960][  0]LogInit: CPU Page size=65536, Cores=4
-[2017.04.18-01.03.59:960][  0]LogInit: High frequency timer resolution =3.604941 MHz
-[2017.04.18-01.03.59:960][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
-[2017.04.18-01.03.59:960][  0]LogMemory: Platform Memory Stats for Windows
-[2017.04.18-01.03.59:960][  0]LogMemory: Process Physical Memory: 264.49 MB used, 264.49 MB peak
-[2017.04.18-01.03.59:960][  0]LogMemory: Process Virtual Memory: 262.79 MB used, 262.79 MB peak
-[2017.04.18-01.03.59:960][  0]LogMemory: Physical Memory: 5508.07 MB used,  27182.34 MB free, 32690.41 MB total
-[2017.04.18-01.03.59:960][  0]LogMemory: Virtual Memory: 676.63 MB used,  27182.34 MB free, 134217728.00 MB total
-[2017.04.18-01.03.59:984][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
-[2017.04.18-01.04.00:488][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.18-01.23.17:215][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.18-01.23.17:215][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.04.18-01.23.17:224][  0]LogInit: Computer: SIGLAB-VR2
+[2017.04.18-01.23.17:224][  0]LogInit: User: SIG
+[2017.04.18-01.23.17:224][  0]LogInit: CPU Page size=65536, Cores=4
+[2017.04.18-01.23.17:224][  0]LogInit: High frequency timer resolution =3.604941 MHz
+[2017.04.18-01.23.17:225][  0]LogMemory: Memory total: Physical=31.9GB (32GB approx)
+[2017.04.18-01.23.17:225][  0]LogMemory: Platform Memory Stats for Windows
+[2017.04.18-01.23.17:225][  0]LogMemory: Process Physical Memory: 264.54 MB used, 264.54 MB peak
+[2017.04.18-01.23.17:225][  0]LogMemory: Process Virtual Memory: 262.95 MB used, 262.95 MB peak
+[2017.04.18-01.23.17:225][  0]LogMemory: Physical Memory: 5973.73 MB used,  26716.68 MB free, 32690.41 MB total
+[2017.04.18-01.23.17:225][  0]LogMemory: Virtual Memory: 676.63 MB used,  26716.68 MB free, 134217728.00 MB total
+[2017.04.18-01.23.17:249][  0]LogTextLocalizationManager: No specific translations for ('en-US') exist, so ('en') translations will be used.
+[2017.04.18-01.23.17:794][  0]LogD3D11RHI: D3D11 adapters:
+[2017.04.18-01.23.17:828][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1070' (Feature Level 11_0)
+[2017.04.18-01.23.17:828][  0]LogD3D11RHI:       8120/0/16345 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:2, VendorId:0x10de
+[2017.04.18-01.23.17:829][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.04.18-01.23.17:829][  0]LogD3D11RHI:       0/0/16345 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.04.18-01.23.17:829][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.04.18-01.23.17:833][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.04.18-01.23.17:833][  0]LogD3D11RHI:     GPU DeviceId: 0x1b81 (for the marketing name, search the web for "GPU Device Id")
+[2017.04.18-01.23.17:833][  0]LogWindows: EnumDisplayDevices:
+[2017.04.18-01.23.17:833][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070' (P:1 D:1)
+[2017.04.18-01.23.17:833][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070' (P:0 D:1)
+[2017.04.18-01.23.17:833][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.04.18-01.23.17:833][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070' (P:0 D:0)
+[2017.04.18-01.23.17:833][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2017.04.18-01.23.17:833][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1070
+[2017.04.18-01.23.17:833][  0]LogD3D11RHI:   Driver Version: 378.49 (internal:21.21.13.7849, unified:378.49)
+[2017.04.18-01.23.17:833][  0]LogD3D11RHI:      Driver Date: 1-20-2017
+[2017.04.18-01.23.17:833][  0]LogRHI: Texture pool is 1361 MB (70% of 1945 MB)
+[2017.04.18-01.23.17:848][  0]LogD3D11RHI: Async texture creation enabled
+[2017.04.18-01.23.17:858][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
+[2017.04.18-01.23.17:858][  0]LogShaderCompilers: Guid format shader working directory is -18 characters bigger than the processId version (../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Intermediate/Shaders/WorkingDirectory/1240/).
+[2017.04.18-01.23.17:858][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/SIG/AppData/Local/Temp/UnrealShaderWorkingDir/3350B4DA4B7F3817D551BBBD7FE13B62/'.
+[2017.04.18-01.23.17:858][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.04.18-01.23.18:758][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.04.18-01.23.18:803][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.04.18-01.23.18:847][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.04.18-01.23.18:892][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.04.18-01.23.18:936][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.04.18-01.23.18:980][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.04.18-01.23.19:024][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.04.18-01.23.19:068][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.04.18-01.23.19:105][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.04.18-01.23.19:147][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.04.18-01.23.19:189][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.04.18-01.23.19:231][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.04.18-01.23.19:274][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.04.18-01.23.19:317][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.04.18-01.23.19:361][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.04.18-01.23.19:447][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.04.18-01.23.19:447][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.04.18-01.23.19:478][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.04.18-01.23.19:549][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.04.18-01.23.19:576][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.04.18-01.23.19:618][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.04.18-01.23.19:660][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.04.18-01.23.19:702][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.04.18-01.23.19:745][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.04.18-01.23.19:745][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.04.18-01.23.20:062][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache: Loaded boot cache 0.05s 50MB C:/Users/SIG/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/SIG/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.04.18-01.23.20:112][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.04.18-01.23.20:126][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.04.18-01.23.20:137][  0]LogDerivedDataCache: Using Local data cache path C:/Users/SIG/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.04.18-01.23.20:297][  0]LogInit: Selected Device Profile: [Windows]
+[2017.04.18-01.23.20:300][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.04.18-01.23.20:467][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.04.18-01.23.20:501][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.04.18-01.23.20:539][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.04.18-01.23.20:539][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.04.18-01.23.20:539][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.04.18-01.23.20:952][  0]LogNetVersion: GetLocalNetworkVersion: CL: 3195953, ProjectName: magic_muffin, ProjectVersion: , EngineNetworkVersion: 2, GameNetworkVersion: 0, NetworkChecksum: 3102453254
+[2017.04.18-01.23.21:003][  0]LogAssetRegistry: FAssetRegistry took 0.0216 seconds to start up
+[2017.04.18-01.23.21:044][  0]LogPackageLocalizationCache: Processed 3 localized package path(s) for 2 prioritized culture(s) in 0.022218 seconds
+[2017.04.18-01.23.21:049][  0]LogUObjectArray: 31946 objects as part of root set at end of initial load.
+[2017.04.18-01.23.21:049][  0]LogUObjectAllocator: 6935848 out of 0 bytes used by permanent object pool.
+[2017.04.18-01.23.21:049][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.04.18-01.23.21:101][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.04.18-01.23.21:678][  0]LogSlate: Using Freetype 2.6.0
+[2017.04.18-01.23.21:679][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.18-01.23.21:679][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.04.18-01.23.22:353][  0]LogSubstanceCoreModule: Substance [CPU] Engine Loaded, Max Texture Size = 2048
+[2017.04.18-01.23.22:377][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.04.18-01.23.22:412][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.04.18-01.23.22:664][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.04.18-01.23.22:972][  0]SourceControl: Info Source control is disabled
+[2017.04.18-01.23.22:993][  0]SourceControl: Info Source control is disabled
+[2017.04.18-01.23.23:031][  0]SourceControl: Info Source control is disabled
+[2017.04.18-01.23.23:068][  0]SourceControl: Info Source control is disabled
+[2017.04.18-01.23.24:148][  0]LogEngine: Initializing Engine...
+[2017.04.18-01.23.24:165][  0]LogHMD: Failed to initialize OpenVR with code 108
+[2017.04.18-01.23.24:357][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.04.18-01.23.24:371][  0]LogInit: XAudio2 using 'Speakers / Headphones (Realtek Audio)' : 2 channels at 48 kHz using 32 bits per sample (channel mask 0x3)
+[2017.04.18-01.23.24:492][  0]LogInit: FAudioDevice initialized.
+[2017.04.18-01.23.24:516][  0]LogDerivedDataCache: Saved boot cache 0.02s 50MB C:/Users/SIG/AppData/Local/UnrealEngine/4.14/DerivedDataCache/Boot.ddc.
+[2017.04.18-01.23.24:524][  0]LogInit: Texture streaming: Enabled
+[2017.04.18-01.23.24:674][  0]LogInit: Transaction tracking system initialized
+[2017.04.18-01.23.24:948][  0]BlueprintLog: New page: Editor Load
+[2017.04.18-01.23.25:650][  0]LocalizationService: Info Localization service is disabled
+[2017.04.18-01.23.26:179][  0]LogConsoleResponse:Display: 
+[2017.04.18-01.23.26:289][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.04.18-01.23.26:289][  0]LogCook:Display: Mobile HDR setting 1
+[2017.04.18-01.23.26:534][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SIG/Desktop/final-project-magic-muffin/Content/' took 0.01s
+[2017.04.18-01.23.27:044][  0]SourceControl: Info Source control is disabled
+[2017.04.18-01.23.27:044][  0]Cmd: MAP LOAD FILE="../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/FirstPersonExampleMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.18-01.23.27:044][  0]LightingResults: New page: Lighting Build
+[2017.04.18-01.23.27:077][  0]MapCheck: New page: Map Check
+[2017.04.18-01.23.27:077][  0]LightingResults: New page: Lighting Build
+[2017.04.18-01.23.27:496][  0]LogAIModule: Creating AISystem for world FirstPersonExampleMap
+[2017.04.18-01.23.27:504][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.18-01.23.27:505][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.18-01.23.27:543][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 38.109ms to complete.
+[2017.04.18-01.23.27:543][  0]LogFileHelpers: Loading map 'FirstPersonExampleMap' took 0.499
+[2017.04.18-01.23.27:605][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.04.18-01.23.27:671][  0]LogCollectionManager: Loaded 0 collections in 0.001930 seconds
+[2017.04.18-01.23.27:743][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SIG/Desktop/final-project-magic-muffin/Saved/Collections/' took 0.01s
+[2017.04.18-01.23.27:743][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SIG/Desktop/final-project-magic-muffin/Content/Developers/SIG/Collections/' took 0.01s
+[2017.04.18-01.23.27:743][  0]LogFileCache: Scanning file cache for directory 'C:/Users/SIG/Desktop/final-project-magic-muffin/Content/Collections/' took 0.01s
+[2017.04.18-01.23.27:743][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000001 seconds
+[2017.04.18-01.23.27:751][  0]LogContentBrowser: Native class hierarchy populated in 0.0075 seconds. Added 2205 classes and 437 folders.
+[2017.04.18-01.23.27:784][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.04.18-01.23.27:784][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.04.18-01.23.27:784][  0]LogContentBrowser: Native class hierarchy updated for 'GameplayTags' in 0.0005 seconds. Added 13 classes and 0 folders.
+[2017.04.18-01.23.27:834][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.04.18-01.23.27:865][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0004 seconds. Added 0 classes and 0 folders.
+[2017.04.18-01.23.27:901][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.04.18-01.23.27:933][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.04.18-01.23.27:937][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.04.18-01.23.27:995][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0005 seconds. Added 1 classes and 2 folders.
+[2017.04.18-01.23.27:995][  0]LogLoad: (Engine Initialization) Total time: 12.02 seconds
+[2017.04.18-01.23.27:995][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.17 seconds
+[2017.04.18-01.23.27:995][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.04.18-01.23.27:995][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.04.18-01.23.28:004][  0]LogOcInput: OculusInput pre-init called
+[2017.04.18-01.23.28:021][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2017.04.18-01.23.28:129][  0]LogRenderer: Reallocating scene render targets to support 1144x436 NumSamples 1 (Frame:2).
+[2017.04.18-01.23.28:175][  1]LogAssetRegistry: Asset discovery search completed in 7.1934 seconds
+[2017.04.18-01.23.28:175][  1]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
+[2017.04.18-01.23.28:175][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000026 seconds (updated 0 objects)
+[2017.04.18-01.23.36:920][ 28]LogLinker:Warning: Can't find file '/Game/Particles/TestParticles'
+[2017.04.18-01.23.36:920][ 28]LogLinker:Warning: Can't find file for asset '/Game/Particles/TestParticles' while loading ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/TestRoom.umap.
+[2017.04.18-01.23.36:920][ 28]LoadErrors:Error: Error /Game/FirstPersonBP/Maps/TestRoom : Can't find file for asset. /Game/Particles/TestParticles
+[2017.04.18-01.23.36:920][ 28]LogLinker:Warning: Can't find file '/Game/Particles/TestParticles'
+[2017.04.18-01.23.36:920][ 28]LogLinker:Warning: Can't find file for asset '/Game/Particles/TestParticles' while loading ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/TestRoom.umap.
+[2017.04.18-01.23.36:922][ 28]LogLinker:Warning: Can't find file '/Game/Particles/TestParticles'
+[2017.04.18-01.23.36:922][ 28]LogLinker:Warning: Can't find file for asset '/Game/Particles/TestParticles' while loading NULL.
+[2017.04.18-01.23.36:922][ 28]LogLinker:Warning: Can't find file '/Game/Particles/TestParticles'
+[2017.04.18-01.23.36:922][ 28]LogLinker:Warning: Can't find file for asset '/Game/Particles/TestParticles' while loading NULL.
+[2017.04.18-01.23.36:946][ 28]LogLinker:Warning: Can't find file '/Game/Particles/TestParticles'
+[2017.04.18-01.23.36:946][ 28]LoadErrors: Info Failed to load /Game/Particles/TestParticles.TestParticles Referenced by TestParticles_2
+[2017.04.18-01.23.36:946][ 28]LogLinker:Warning: Can't find file for asset '/Game/Particles/TestParticles' while loading NULL.
+[2017.04.18-01.23.36:960][ 28]LogStaticMesh: Building static mesh Sph??re_19...
+[2017.04.18-01.23.36:961][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.36:970][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_19.Sph??re_19
+[2017.04.18-01.23.36:973][ 28]LogStaticMesh: Building static mesh Sph??re_18...
+[2017.04.18-01.23.36:973][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.36:983][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_18.Sph??re_18
+[2017.04.18-01.23.36:984][ 28]LogStaticMesh: Building static mesh Sph??re_17...
+[2017.04.18-01.23.36:985][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.36:993][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_17.Sph??re_17
+[2017.04.18-01.23.36:995][ 28]LogStaticMesh: Building static mesh Sph??re_16...
+[2017.04.18-01.23.36:996][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:005][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_16.Sph??re_16
+[2017.04.18-01.23.37:006][ 28]LogStaticMesh: Building static mesh Sph??re_15...
+[2017.04.18-01.23.37:007][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:016][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_15.Sph??re_15
+[2017.04.18-01.23.37:017][ 28]LogStaticMesh: Building static mesh Sph??re_14...
+[2017.04.18-01.23.37:018][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:027][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_14.Sph??re_14
+[2017.04.18-01.23.37:028][ 28]LogStaticMesh: Building static mesh Sph??re_13...
+[2017.04.18-01.23.37:029][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:037][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_13.Sph??re_13
+[2017.04.18-01.23.37:039][ 28]LogStaticMesh: Building static mesh Sph??re_12...
+[2017.04.18-01.23.37:039][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:048][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_12.Sph??re_12
+[2017.04.18-01.23.37:050][ 28]LogStaticMesh: Building static mesh Sph??re_11...
+[2017.04.18-01.23.37:050][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:059][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_11.Sph??re_11
+[2017.04.18-01.23.37:062][ 28]LogStaticMesh: Building static mesh Sph??re_10...
+[2017.04.18-01.23.37:062][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:071][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_10.Sph??re_10
+[2017.04.18-01.23.37:073][ 28]LogStaticMesh: Building static mesh Sph??re_1...
+[2017.04.18-01.23.37:073][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:082][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_1.Sph??re_1
+[2017.04.18-01.23.37:085][ 28]LogMaterial: Missing cached shader map for material Mat_1, compiling. 
+[2017.04.18-01.23.37:107][ 28]LogStaticMesh: Building static mesh Sph??re...
+[2017.04.18-01.23.37:108][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:116][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re.Sph??re
+[2017.04.18-01.23.37:119][ 28]LogMaterial: Missing cached shader map for material Mat, compiling. 
+[2017.04.18-01.23.37:130][ 28]LogStaticMesh: Building static mesh Cylindre...
+[2017.04.18-01.23.37:131][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:136][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Cylindre.Cylindre
+[2017.04.18-01.23.37:141][ 28]LogStaticMesh: Building static mesh Sph??re_20...
+[2017.04.18-01.23.37:142][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:153][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_20.Sph??re_20
+[2017.04.18-01.23.37:153][ 28]LogStaticMesh: Building static mesh Sph??re_21...
+[2017.04.18-01.23.37:154][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:166][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_21.Sph??re_21
+[2017.04.18-01.23.37:166][ 28]LogStaticMesh: Building static mesh Sph??re_22...
+[2017.04.18-01.23.37:167][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:179][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_22.Sph??re_22
+[2017.04.18-01.23.37:179][ 28]LogStaticMesh: Building static mesh Sph??re_23...
+[2017.04.18-01.23.37:180][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:190][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_23.Sph??re_23
+[2017.04.18-01.23.37:191][ 28]LogStaticMesh: Building static mesh Sph??re_24...
+[2017.04.18-01.23.37:192][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:202][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_24.Sph??re_24
+[2017.04.18-01.23.37:202][ 28]LogStaticMesh: Building static mesh Sph??re_25...
+[2017.04.18-01.23.37:203][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:215][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_25.Sph??re_25
+[2017.04.18-01.23.37:215][ 28]LogStaticMesh: Building static mesh Sph??re_26...
+[2017.04.18-01.23.37:216][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:225][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_26.Sph??re_26
+[2017.04.18-01.23.37:225][ 28]LogStaticMesh: Building static mesh Sph??re_27...
+[2017.04.18-01.23.37:226][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:240][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_27.Sph??re_27
+[2017.04.18-01.23.37:240][ 28]LogStaticMesh: Building static mesh Sph??re_28...
+[2017.04.18-01.23.37:241][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:256][ 28]LogStaticMesh: Built static mesh [0.02s] /Game/Meshes/Sph__re_28.Sph??re_28
+[2017.04.18-01.23.37:256][ 28]LogStaticMesh: Building static mesh Sph??re_29...
+[2017.04.18-01.23.37:257][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:270][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_29.Sph??re_29
+[2017.04.18-01.23.37:271][ 28]LogStaticMesh: Building static mesh Sph??re_2...
+[2017.04.18-01.23.37:272][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:285][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_2.Sph??re_2
+[2017.04.18-01.23.37:285][ 28]LogStaticMesh: Building static mesh Sph??re_30...
+[2017.04.18-01.23.37:286][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:299][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_30.Sph??re_30
+[2017.04.18-01.23.37:300][ 28]LogStaticMesh: Building static mesh Sph??re_31...
+[2017.04.18-01.23.37:301][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:311][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_31.Sph??re_31
+[2017.04.18-01.23.37:311][ 28]LogStaticMesh: Building static mesh Sph??re_32...
+[2017.04.18-01.23.37:312][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:324][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_32.Sph??re_32
+[2017.04.18-01.23.37:325][ 28]LogStaticMesh: Building static mesh Sph??re_33...
+[2017.04.18-01.23.37:326][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:338][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_33.Sph??re_33
+[2017.04.18-01.23.37:338][ 28]LogStaticMesh: Building static mesh Sph??re_34...
+[2017.04.18-01.23.37:339][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:350][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_34.Sph??re_34
+[2017.04.18-01.23.37:350][ 28]LogStaticMesh: Building static mesh Sph??re_35...
+[2017.04.18-01.23.37:351][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:363][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_35.Sph??re_35
+[2017.04.18-01.23.37:364][ 28]LogStaticMesh: Building static mesh Sph??re_3...
+[2017.04.18-01.23.37:365][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:378][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_3.Sph??re_3
+[2017.04.18-01.23.37:378][ 28]LogStaticMesh: Building static mesh Sph??re_4...
+[2017.04.18-01.23.37:379][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:392][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_4.Sph??re_4
+[2017.04.18-01.23.37:392][ 28]LogStaticMesh: Building static mesh Sph??re_5...
+[2017.04.18-01.23.37:393][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:408][ 28]LogStaticMesh: Built static mesh [0.02s] /Game/Meshes/Sph__re_5.Sph??re_5
+[2017.04.18-01.23.37:409][ 28]LogStaticMesh: Building static mesh Sph??re_6...
+[2017.04.18-01.23.37:410][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:423][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_6.Sph??re_6
+[2017.04.18-01.23.37:424][ 28]LogStaticMesh: Building static mesh Sph??re_7...
+[2017.04.18-01.23.37:425][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:439][ 28]LogStaticMesh: Built static mesh [0.02s] /Game/Meshes/Sph__re_7.Sph??re_7
+[2017.04.18-01.23.37:439][ 28]LogStaticMesh: Building static mesh Sph??re_8...
+[2017.04.18-01.23.37:440][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:453][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_8.Sph??re_8
+[2017.04.18-01.23.37:454][ 28]LogStaticMesh: Building static mesh Sph??re_9...
+[2017.04.18-01.23.37:455][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.37:466][ 28]LogStaticMesh: Built static mesh [0.01s] /Game/Meshes/Sph__re_9.Sph??re_9
+[2017.04.18-01.23.37:524][ 28]LogTexture:Display: Building textures: HQ_Lightmap1_1 (AutoDXT)
+[2017.04.18-01.23.37:759][ 28]LogTexture:Display: Building textures: HQ_Lightmap1_2 (AutoDXT)
+[2017.04.18-01.23.37:794][ 28]LogTexture:Display: Building textures: LQ_Lightmap_1_1 (DXT1)
+[2017.04.18-01.23.37:981][ 28]LogTexture:Display: Building textures: LQ_Lightmap_1_2 (DXT1)
+[2017.04.18-01.23.38:008][ 28]LogTexture:Display: Building textures: SkyOcclusion1_1 (AutoDXT)
+[2017.04.18-01.23.38:128][ 28]LogTexture:Display: Building textures: SkyOcclusion1_2 (AutoDXT)
+[2017.04.18-01.23.38:136][ 28]LogStaticMesh: Building static mesh pPlane1...
+[2017.04.18-01.23.38:167][ 28]LogMeshUtilities: Invalid vertex normals found for mesh. Forcing recomputation of vertex normals for MikkTSpace. Fix mesh or disable "Use MikkTSpace Tangent Space" to avoid forced recomputation of normals.
+[2017.04.18-01.23.44:338][ 28]LogStaticMesh: Built static mesh [6.20s] /Game/Meshes/pPlane1_3.pPlane1
+[2017.04.18-01.23.44:375][ 28]LogMaterial: Missing cached shader map for material lambert1, compiling. 
+[2017.04.18-01.23.44:397][ 28]LogAIModule: Creating AISystem for world TestRoom
+[2017.04.18-01.23.44:471][ 28]Cmd: MAP LOAD FILE="../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/TestRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.18-01.23.44:471][ 28]LightingResults: New page: Lighting Build
+[2017.04.18-01.23.44:472][ 28]LoadErrors: New page: Loading map: TestRoom.umap
+[2017.04.18-01.23.44:473][ 28]MapCheck: New page: Map Check
+[2017.04.18-01.23.44:473][ 28]LightingResults: New page: Lighting Build
+[2017.04.18-01.23.44:565][ 28]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.18-01.23.44:589][ 28]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.18-01.23.44:639][ 28]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 49.799ms to complete.
+[2017.04.18-01.23.44:639][ 28]LogFileHelpers: Loading map 'TestRoom' took 0.169
+[2017.04.18-01.23.46:781][276]LogTemp: Repeting last play command: Standalone Game
+[2017.04.18-01.23.47:177][276]LogSavePackage: Save=302.88ms
+[2017.04.18-01.23.47:177][276]LogSavePackage: Moving '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/UEDPCTestRoomE303EDAD4401925C0F9B6DBA57BDD570.tmp' to '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCTestRoom.umap'
+[2017.04.18-01.23.47:179][276]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCTestRoom.umap
+[2017.04.18-01.23.47:182][276]LogEditorTransaction: Undo Spawn Play From Here Start
+[2017.04.18-01.24.03:926][100]LogAIModule: Creating AISystem for world MainRoom
+[2017.04.18-01.24.03:939][100]Cmd: MAP LOAD FILE="../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/MainRoom.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.04.18-01.24.03:940][100]LightingResults: New page: Lighting Build
+[2017.04.18-01.24.03:940][100]LoadErrors: New page: Loading map: MainRoom.umap
+[2017.04.18-01.24.03:942][100]MapCheck: New page: Map Check
+[2017.04.18-01.24.03:942][100]LightingResults: New page: Lighting Build
+[2017.04.18-01.24.03:962][100]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.04.18-01.24.03:984][100]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.04.18-01.24.04:028][100]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 43.262ms to complete.
+[2017.04.18-01.24.04:028][100]LogFileHelpers: Loading map 'MainRoom' took 0.089
+[2017.04.18-01.24.06:337][375]LogTemp: Repeting last play command: Standalone Game
+[2017.04.18-01.24.06:484][375]LogSavePackage: Save=54.93ms
+[2017.04.18-01.24.06:484][375]LogSavePackage: Moving '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/UEDPCMainRoom1652050A449597607E728C925B9468F2.tmp' to '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCMainRoom.umap'
+[2017.04.18-01.24.06:484][375]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/Autosaves/Game/FirstPersonBP/Maps/UEDPCMainRoom.umap
+[2017.04.18-01.24.06:564][375]LogSavePackage: Save=67.92ms
+[2017.04.18-01.24.06:564][375]LogSavePackage: Moving '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Saved/MainRoom_BuiltData0056DF184375A0008E0CE7A68F92CAAB.tmp' to '../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/MainRoom_BuiltData.uasset'
+[2017.04.18-01.24.06:566][375]LogSavePackage:Display: Finished SavePackage ../../../../../../Users/SIG/Desktop/final-project-magic-muffin/Content/FirstPersonBP/Maps/MainRoom_BuiltData.uasset
