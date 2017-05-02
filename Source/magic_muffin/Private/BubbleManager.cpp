@@ -18,10 +18,9 @@ ABubbleManager::ABubbleManager()
 void ABubbleManager::BeginPlay()
 {
 	Super::BeginPlay();
-	for (int i = 0; i < 3; i++)
-	{
-		spawnBubble();
-	}
+
+	GetWorld()->GetTimerManager().SetTimer(SpawnTimerHandle, this, &ABubbleManager::spawnBubble, 5.0f, true, 0.2f);
+
 }
 
 // Called every frame

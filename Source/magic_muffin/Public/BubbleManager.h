@@ -32,5 +32,8 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Bubble Settings")
 	UClass *bubbleClass;
+
+	/* Handle to manage the timer */
+	FTimerHandle SpawnTimerHandle;
 	
 };
