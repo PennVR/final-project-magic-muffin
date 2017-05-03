@@ -35,7 +35,8 @@ void ABubbleManager::spawnBubble()
 {
 	float step = FMath::RandRange(50.f, radius);
 	float randAngle = FMath::RandRange(0.f, 360.f);
-	FVector spawnLocation = FVector(step*FMath::Cos(randAngle), step*FMath::Sin(randAngle), 250.f);
+	float randHeight = FMath::RandRange(250.f, 700.f);
+	FVector spawnLocation = FVector(step*FMath::Cos(randAngle), step*FMath::Sin(randAngle), randHeight);
 
 	FActorSpawnParameters params;
 	params.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AlwaysSpawn;
